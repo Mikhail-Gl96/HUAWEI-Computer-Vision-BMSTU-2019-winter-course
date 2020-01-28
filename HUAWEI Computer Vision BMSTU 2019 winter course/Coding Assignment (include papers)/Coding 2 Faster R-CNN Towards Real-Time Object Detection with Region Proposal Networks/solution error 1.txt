@@ -1,0 +1,6 @@
+	path: /lib/roi_data_layer/roibatchLoader.py
+	file: roibatchLoader.py
+	line: 52
+	orig: target_ratio = 1 
+	change to: target_ratio = np.array(1)
+

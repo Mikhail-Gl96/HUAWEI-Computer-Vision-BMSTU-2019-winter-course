@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "test_net.py", line 26, in <module>
+    from roi_data_layer.roidb import combined_roidb
+  File "/home/ma-user/work/coding 2/codebase/faster-rcnn.pytorch-master/lib/roi_data_layer/roidb.py", line 12, in <module>
+    from datasets.factory import get_imdb
+  File "/home/ma-user/work/coding 2/codebase/faster-rcnn.pytorch-master/lib/datasets/factory.py", line 14, in <module>
+    from datasets.pascal_voc import pascal_voc
+  File "/home/ma-user/work/coding 2/codebase/faster-rcnn.pytorch-master/lib/datasets/pascal_voc.py", line 23, in <module>
+    from .imdb import imdb
+  File "/home/ma-user/work/coding 2/codebase/faster-rcnn.pytorch-master/lib/datasets/imdb.py", line 14, in <module>
+    from model.utils.cython_bbox import bbox_overlaps
+ModuleNotFoundError: No module named 'model.utils.cython_bbox'

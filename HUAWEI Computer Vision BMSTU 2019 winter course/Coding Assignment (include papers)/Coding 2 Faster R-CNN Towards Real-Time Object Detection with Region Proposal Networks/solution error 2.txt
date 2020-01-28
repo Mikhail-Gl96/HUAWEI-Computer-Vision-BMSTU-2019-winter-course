@@ -1,0 +1,12 @@
+need to download pre-trained weights from one of the follow sites and create this path "'data/pretrained_model":
+	1. https://s3.amazonaws.com/pytorch/models/resnet50-19c8e357.pth
+	2. https://github.com/fregu856/deeplabv3/raw/master/pretrained_models/resnet/resnet50-19c8e357.pth
+
+
+alternative solution:
+	path: /coding 2/codebase/faster-rcnn.pytorch-master
+	file: trainval_net.py
+	line: 242
+	data_original: fasterRCNN = resnet(imdb.classes, 50, pretrained=True, class_agnostic=args.class_agnostic)
+	choose: pretrained=True
+	change_to: pretrained=False

@@ -1,0 +1,45 @@
+Making model...
+Preparing loss function:
+1.000 * L1
+[Epoch 0]	Learning rate: 1.00e-4
+[1600/16000]	[L1: 14.1944]	3.2+2.7s
+[3200/16000]	[L1: 10.7139]	3.1+2.5s
+[4800/16000]	[L1: 9.1413]	3.1+2.6s
+[6400/16000]	[L1: 8.2589]	3.0+2.6s
+[8000/16000]	[L1: 7.6548]	3.1+2.5s
+[9600/16000]	[L1: 7.2039]	3.1+2.5s
+[11200/16000]	[L1: 6.8787]	3.0+2.6s
+[12800/16000]	[L1: 6.5973]	3.1+2.5s
+[14400/16000]	[L1: 6.4295]	3.1+2.5s
+[16000/16000]	[L1: 6.2589]	3.0+2.6s
+
+Evaluation:
+0it [00:00, ?it/s]
+[DIV2K x2]	PSNR: nan (Best: nan @epoch 1)
+Forward: 0.16s
+
+Saving...
+Traceback (most recent call last):
+  File "main.py", line 33, in <module>
+    main()
+  File "main.py", line 28, in main
+    t.test()
+  File "/home/ma-user/work/coding 3/codebase/EDSR-PyTorch-master/src/trainer.py", line 123, in test
+    self.ckp.save(self, epoch, is_best=(best[1][0, 0] + 1 == epoch))
+  File "/home/ma-user/work/coding 3/codebase/EDSR-PyTorch-master/src/utility.py", line 96, in save
+    trainer.loss.plot_loss(self.dir, epoch)
+  File "/home/ma-user/work/coding 3/codebase/EDSR-PyTorch-master/src/loss/__init__.py", line 111, in plot_loss
+    plt.plot(axis, self.log[:, i].numpy(), label=label)
+  File "/home/ma-user/anaconda3/envs/Pytorch-1.0.0/lib/python3.6/site-packages/matplotlib/pyplot.py", line 3363, in plot
+    ret = ax.plot(*args, **kwargs)
+  File "/home/ma-user/anaconda3/envs/Pytorch-1.0.0/lib/python3.6/site-packages/matplotlib/__init__.py", line 1867, in inner
+    return func(ax, *args, **kwargs)
+  File "/home/ma-user/anaconda3/envs/Pytorch-1.0.0/lib/python3.6/site-packages/matplotlib/axes/_axes.py", line 1528, in plot
+    for line in self._get_lines(*args, **kwargs):
+  File "/home/ma-user/anaconda3/envs/Pytorch-1.0.0/lib/python3.6/site-packages/matplotlib/axes/_base.py", line 406, in _grab_next_args
+    for seg in self._plot_args(this, kwargs):
+  File "/home/ma-user/anaconda3/envs/Pytorch-1.0.0/lib/python3.6/site-packages/matplotlib/axes/_base.py", line 383, in _plot_args
+    x, y = self._xy_from_xy(x, y)
+  File "/home/ma-user/anaconda3/envs/Pytorch-1.0.0/lib/python3.6/site-packages/matplotlib/axes/_base.py", line 242, in _xy_from_xy
+    "have shapes {} and {}".format(x.shape, y.shape))
+ValueError: x and y must have same first dimension, but have shapes (0,) and (1,)

@@ -1,0 +1,28 @@
+ERROR 1:
+	gcc: error: /home/ma-user/work/coding 2/codebase/faster-rcnn.pytorch-master/lib/model/nms/src/nms_cuda_kernel.cu.o: No such file or directory
+
+SOLUTION ERRROR 1:
+	upload file nms_cuda_kernel.cu.o to path below
+	/home/ma-user/work/coding 2/codebase/faster-rcnn.pytorch-master/lib/model/nms/src/
+
+ERROR 2:
+	gcc: error: /home/ma-user/work/coding 2/codebase/faster-rcnn.pytorch-master/lib/model/roi_pooling/src/roi_pooling.cu.o: No such file or directory
+
+SOLUTION ERRROR 2:
+	upload file roi_pooling.cu.o to path below
+	/home/ma-user/work/coding 2/codebase/faster-rcnn.pytorch-master/lib/model/roi_pooling/src/
+
+ERROR 3:
+	gcc: error: /home/ma-user/work/coding 2/codebase/faster-rcnn.pytorch-master/lib/model/roi_align/src/roi_align_kernel.cu.o: No such file or directory
+
+SOLUTION ERRROR 3:
+	upload file roi_align_kernel.cu.o to path below
+	/home/ma-user/work/coding 2/codebase/faster-rcnn.pytorch-master/lib/model/roi_align/src/
+
+ERROR 4:
+	gcc: error: /home/ma-user/work/coding 2/codebase/faster-rcnn.pytorch-master/lib/model/roi_crop/src/roi_crop_cuda_kernel.cu.o: No such file or directory
+
+SOLUTION ERRROR 4:
+	upload file roi_crop_cuda_kernel.cu.o to path below
+	/home/ma-user/work/coding 2/codebase/faster-rcnn.pytorch-master/lib/model/roi_crop/src/
+
